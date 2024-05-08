@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Users Bootstrap Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Users Section  -->
+    <div class="container">
+      <!-- theme buttons -->
+      <div class="d-flex justify-content-end align-items-center mt-3">
+        <div class="btn-group">
+          <div class="btn btn-dark btn-sm" data-bs-theme-value="dark">Dark</div>
+          <div class="btn btn-light btn-sm" data-bs-theme-value="light">
+            Light
+          </div>
+        </div>
+      </div>
+      <!-- header section  -->
+      <header class="my-2">
+        <h3>Users</h3>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control form-control-sm rounded-3"
+              placeholder="Search"
+            />
+          </div>
+          <div class="col-md-8 mt-4 mt-md-0">
+            <nav
+              class="nav d-flex justify-content-md-end justify-content-center fw-light"
+            >
+              <div class="nav-item">
+                <a href="#" class="nav-link">Reputation</a>
+              </div>
+              <div class="nav-item">
+                <a href="#" class="nav-link text-bg-primary rounded-4"
+                  >New Users</a
+                >
+              </div>
+              <div class="nav-item">
+                <a href="#" class="nav-link">Editors</a>
+              </div>
+              <div class="nav-item">
+                <a href="#" class="nav-link">Moderators</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="my-4">
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-4">
+                  <div class="user-img">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="data:image/jpeg;base64,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"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h4>John Doe</h4>
+                    <h6>Troy, MI</h6>
+                    <span class="badge bg-primary fw-light">Nature</span>
+                    <span class="badge bg-primary fw-light">Movies</span>
+                    <span class="badge bg-primary fw-light">Fashion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-4">
+                  <div class="user-img">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h4>Lelah Doe</h4>
+                    <h6>Troy, MI</h6>
+                    <span class="badge bg-primary fw-light">Nature</span>
+                    <span class="badge bg-primary fw-light">Movies</span>
+                    <span class="badge bg-primary fw-light">Fashion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-4">
+                  <div class="user-img">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h4>Mr. Smith</h4>
+                    <h6>Troy, TX</h6>
+                    <span class="badge bg-primary fw-light">Nature</span>
+                    <span class="badge bg-primary fw-light">Movies</span>
+                    <span class="badge bg-primary fw-light">Fashion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-4">
+                  <div class="user-img">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h4>Ms. Gordon</h4>
+                    <h6>Gotham City, NJ</h6>
+                    <span class="badge bg-primary fw-light">Nature</span>
+                    <span class="badge bg-primary fw-light">Movies</span>
+                    <span class="badge bg-primary fw-light">Fashion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-4">
+                  <div class="user-img">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h4>Mark John</h4>
+                    <h6>Jersey City, NJ</h6>
+                    <span class="badge bg-primary fw-light">Nature</span>
+                    <span class="badge bg-primary fw-light">Movies</span>
+                    <span class="badge bg-primary fw-light">Fashion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-4">
+                  <div class="user-img">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h4>Roy Nelson</h4>
+                    <h6>New York, NY</h6>
+                    <span class="badge bg-primary fw-light">Nature</span>
+                    <span class="badge bg-primary fw-light">Movies</span>
+                    <span class="badge bg-primary fw-light">Fashion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="d-flex justify-content-end align-items-center">
+          <div class="pagination">
+            <div class="page-item">
+              <a href="#" class="page-link disabled">Prev</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link active">1</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">2</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">3</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">Next</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/darkmodetoggle.js"></script>
+  </body>
+</html>

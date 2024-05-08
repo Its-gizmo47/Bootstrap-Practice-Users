@@ -1,0 +1,12 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.user-img {
+  height: 120px;
+  width: 120px;
+}
+.user-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
